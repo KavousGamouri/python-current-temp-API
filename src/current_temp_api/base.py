@@ -1,10 +1,8 @@
 from abc import ABC, abstractmethod
 
 class WeatherAPIBase(ABC):
-    def __init__(self, city):
-        
-        self.city = city
-
+    def __init__(self, latitude, longitude, **kwargs):
+        pass
 
     @abstractmethod
     def get_current_temperature(self):
